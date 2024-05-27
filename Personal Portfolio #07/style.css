@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+img{
+    object-fit: cover;
+}
+
+h2{
+    font-weight: 400;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    border: 1px solid #e8e8e8;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 16px;
+    padding: 12px;
+}
+
+nav .logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+nav .logo img{
+    width: 30px;
+    height: 30px;
+}
+
+nav .logo a{
+    color: #000;
+    font-weight: 600;
+}
+
+nav .nav-links{
+    display: flex;
+    gap: 24px;
+}
+
+nav .nav-links a{
+    font-size: 14px;
+    color: #606060;
+    transition: all 0.3s ease;
+}
+
+nav .nav-links a:hover{
+    color: #000;
+}
+
+nav button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    font-size: 14px;
+    height: 32px;
+    width: 122px;
+    background: #000;
+    color: #fff;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+nav button:hover,
+.hero .left-section .top .buttons button.doc:hover,
+.contact .items .item button:hover{
+    color: #000;
+    background: #fff;
+    border-color: #dedede;
+}
+
+nav button i{
+    font-size: 20px;
+}
+
+.hero{
+    margin-top: 80px;
+    height: calc(100vh - 80px);
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.hero > img{
+    max-width: 520px;
+    width: 44%;
+    border-radius: 26px;
+}
+
+.hero .left-section{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.hero .left-section .top h2{
+    font-size: 44px;
+    margin-bottom: 24px;
+}
+
+.hero .left-section .top p{
+    color: #606060;
+    font-size: 18px;
+    margin-bottom: 24px;
+    text-align: justify;
+}
+
+.hero .left-section .top .buttons{
+    display: flex;
+    gap: 8px;
+}
+
+.hero .left-section .top .buttons button,
+.projects .inner > button,
+.contact .items .item button{
+    font-size: 16px;
+    border: none;
+    padding: 5px 20px;
+    background: #fff;
+    border: 1px solid #dedede;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.hero .left-section .top .buttons button i{
+    font-size: 26px;
+}
+
+.hero .left-section .top .buttons button.doc,
+.contact .items .item button{
+    background: #000;
+    color: #fff;
+}
+
+.hero .left-section .top .buttons button.git:hover{
+    background: #000;
+    color: #fff;
+    border-color: transparent;
+}
+
+.hero .left-section .bottom p{
+    font-size: 14px;
+    color: #606060;
+    margin-bottom: 10px;
+}
+
+.hero .left-section .bottom .icons{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #f5f5f5;
+    padding: 50px;
+}
+
+.about > p{
+    font-size: 14px;
+    color: #606060;
+    border: 1px solid #e8e8e8;
+    padding: 6px 14px;
+    border-radius: 16px;
+    margin-bottom: 12px;
+    background: #fff;
+}
+
+.about > h2{
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about .items{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.about .items .item{
+    width: 26%;
+    border: 1px solid #e8e8e8;
+    border-radius: 16px;
+    background: #f1f1f1;
+    padding: 0 0 30px;
+}
+
+.about .items .item .inner{
+    background: #fff;
+    padding: 24px;
+    border-radius: 16px;
+    border: 1px solid #e8e8e8;
+    min-height: 365px;
+}
+
+.about .items .item .inner img{
+    width: 100%;
+    margin-bottom: 16px;
+    border-radius: 12px;
+}
+
+.about .items .item .inner a{
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.about .items .item .inner p{
+    color: #606060;
+    font-size: 15px;
+}
+
+.projects{
+    padding: 0 24px;
+    background: #f5f5f5;
+}
+
+.projects .inner{
+    background: #1f1f1f;
+    color: #fff;
+    padding: 70px;
+    border-radius: 24px;
+}
+
+.projects .inner p.debug{
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: #d8d8d8;
+    border: 1px solid #484848;
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+.projects .inner p.debug i,
+.projects .inner > button i{
+    font-size: 18px;
+}
+
+.projects .inner > h2{
+    font-size: 38px;
+    margin-bottom: 24px;
+}
+
+.projects .inner p.info{
+    font-size: 18px;
+    color: #dedede;
+    margin-bottom: 24px;
+}
+
+.projects .inner > button{
+    padding: 10px 20px;
+    margin-bottom: 40px;
+}
+
+.projects .inner .items{
+    display: flex;
+    gap: 20px;
+}
+
+.projects .inner .items .item{
+    border: 1px solid #484848;
+    border-radius: 16px;
+    padding: 32px 24px;
+    height: 250px;
+    width: 24%;
+    background: #262626;
+}
+
+.projects .inner .items .item i{
+    font-size: 38px;
+    border: 1px solid #606060;
+    border-radius: 10px;
+    padding: 10px;
+    background: #303030;
+}
+
+.projects .inner .items .item a{
+    display: block;
+    margin: 24px 0 14px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.projects .inner .items .item p{
+    color: #a1a1a1;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.contact{
+    padding: 100px 60px;
+    background: #f5f5f5;
+}
+
+.contact > h2{
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.contact .items{
+    display: flex;
+    background: #fff;
+    border-radius: 12px;
+}
+
+.contact .items .item{
+    width: 50%;
+    padding: 30px;
+    border: 1px solid #dedede;
+}
+
+.contact .items .item:nth-child(1){
+    border-radius: 12px 0 0 12px;
+}
+
+.contact .items .item:nth-child(2){
+    border-radius: 0 12px 12px 0;
+}
+
+.contact .items .item a{
+    font-size: 24px;
+    color: #000;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.contact .items .item p{
+    font-size: 20px;
+    color: #606060;
+    margin-bottom: 26px;
+}
+
+.contact .items .item button{
+    padding: 10px 24px;
+}
+
+footer{
+    background: #1f1f1f;
+    border-radius: 24px 24px 0 0;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer p,
+footer a{
+    font-size: 13px;
+    color: #606060;
+    transition: all 0.3s ease;
+}
+
+footer a:hover{
+    color: #fff;
+}
+
+@media screen and (max-width: 1280px) {
+    
+    .hero .left-section .top h2{
+        font-size: 25px;
+    }
+
+    .hero .left-section .top p{
+        font-size: 14px;
+    }
+
+    .hero .left-section .top .buttons button,
+    .projects .inner > button,
+    .contact .items .item button{
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+
+    .hero .left-section .top .buttons button i{
+        font-size: 18px;
+    }
+
+    .about .items .item .inner{
+        min-height: 340px;
+    }
+
+    .about .items .item .inner a,
+    .projects .inner > p.info,
+    .contact .items .item p{
+        font-size: 15px;
+    }
+
+    .about .items .item .inner p{
+        font-size: 13px;
+    }
+
+    .projects .inner .items{
+        flex-wrap: wrap;
+    }
+
+    .projects .inner .items .item{
+        width: 46%;
+        height: 220px;
+    }
+
+    .contact .items .item a{
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    
+    .hero{
+        margin-top: 100px;
+        flex-direction: column;
+        justify-content: center;
+        height: calc(100vh - 100px);
+    }
+
+    .hero .left-section{
+        gap: 20px;
+        align-items: center;
+    }
+
+    .hero .left-section .top{
+        text-align: center;
+    }
+
+    .hero .left-section .top .buttons{
+        justify-content: center;
+    }
+
+    .about .items{
+        flex-wrap: wrap;
+    }
+
+    .about .items .item{
+        width: 40%;
+    }
+
+    .projects .inner .items .item{
+        height: 250px;
+    }
+
+    .contact .items .item button{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    nav,
+    nav .nav-links{
+        gap: 16px;
+    }
+
+    nav button{
+        display: none;
+    }
+
+    .hero{
+        padding: 0 40px;
+    }
+
+    .hero > img{
+        width: 55%;
+    }
+
+    .about > h2{
+        font-size: 18px;
+    }
+
+    .about .items .item{
+        width: 100%;
+    }
+
+    .about .items .item .inner img{
+        height: 65%;
+        max-height: 250px;
+    }
+
+    .projects .inner{
+        padding: 50px 40px;
+    }
+
+    .projects .inner > h2{
+        font-size: 24px;
+    }
+
+    .projects .inner p.info{
+        font-size: 13px;
+    }
+
+    .projects .inner button{
+        width: 100%;
+    }
+
+    .projects .inner .items .item{
+        width: 100%;
+        height: 170px;
+    }
+
+    .projects .inner .items .item i{
+        font-size: 28px;
+    }
+
+    .projects .inner .items .item a{
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 16px;
+    }
+
+    .projects .inner .items .item p{
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .contact{
+        padding: 100px 40px;
+    }
+
+    .contact > h2{
+        font-size: 22px;
+    }
+
+    .contact .items{
+        flex-wrap: wrap;
+    }
+
+    .contact .items .item{
+        width: 100%;
+    }
+
+    .contact .items .item:nth-child(1){
+        border-radius: 12px 12px 0 0;
+    }
+
+    .contact .items .item:nth-child(2){
+        border-radius: 0 0 12px 12px;
+    }
+
+    footer a,
+    footer p{
+        font-size: 11px;
+    }
+
+}
